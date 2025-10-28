@@ -1,0 +1,40 @@
+Mode
+Manual Mapping
+Fields to Set
+intent_keywords
+String
+
+[
+  { "intent": "greeting", "keywords": ["hi", "hello", "hey", "good morning", "good evening", "am from", "i'm in"], "context": "Welcome to Bojja's Grand Bot, How can I assist you today?" },
+  { "intent": "wifi_info", "keywords": ["wifi", "wi-fi", "internet", "password", "network", "wifi password", "network password", "wifi details"], "context": "Wi-Fi network is 'Bojjas Grand'. Username is your first name, password is your room number." },
+  { "intent": "spa_info", "keywords": ["spa", "massage", "facial", "treatment", "ayurvedic", "book spa"], "context": "Our spa is available from 10 AM to 8 PM, located beside the restaurant and offers Rejuvenating treatments and therapies. For appointments please call 629." },
+  { "intent": "pool_info", "keywords": ["pool", "pool timings", "swimming", "swim timings", "pool hours"], "context": "The pool is near spa and open from 8 AM to 8 PM. Towels are available at the poolside desk. Prior registration is required — please call 629." },
+  { "intent": "yoga_info", "keywords": ["yoga", "meditation", "wellness", "yoga session", "morning yoga"], "context": "Morning yoga sessions start at 7 AM on the lawn. Mats are provided. Prior registration is required — please call 629." },
+  { "intent": "gym_info", "keywords": ["gym", "fitness", "exercise", "workout", "fitness center"], "context": "The fitness center is open 6 AM to 10 PM, Equipped with modern workout machines and free weights. Access is free for resort guests. Prior registration is required — please call 629." },
+  { "intent": "room_service_menu", "keywords": ["menu", "food", "order", "room service", "food order", "order food", "food options", "drinking water", "coffee", "tea", "dining choices"], "context": "The menu is available in your room on the table. Please dial 639 for room service." },
+  { "intent": "breakfast_time", "keywords": ["breakfast", "breakfast timings", "morning meal"], "context": "Breakfast is served from 7:30 AM to 10:30 AM at the restaurant and it's complementary for all guests" },
+  { "intent": "diet_options", "keywords": ["vegetarian", "vegan", "veg", "non veg", "gluten-free", "diets", "healthy"], "context": "Yes, our menu includes vegetarian, vegan, and gluten-free dishes. The menu is on the table. Just inform our team when ordering." },
+  { "intent": "minibar_info", "keywords": ["mini", "minibar", "fridge snacks", "complimentary", "price list"], "context": "The minibar is chargeable. A price list is available next to the fridge." },
+  { "intent": "restaurant_info", "keywords": ["restaurant", "dining", "lunch", "dinner"], "context": "We have an all-day dining restaurant and an in-room dining option. Dial 639 for room service." },
+  { "intent": "bar_info", "keywords": ["bar", "drinks", "wine", "whiskey", "rum", "beer", "brandy", "alcoholic drinks", "cocktails", "open top bar", "aqua bar", "oak tavern"], "context": "We have an all-day Bar beside the restaurant. Menus are available in-room on the table, Dial 639 for room service." },
+  { "intent": "romantic_dinner", "keywords": ["private dinner", "special dinner", "beach dinner", "in-villa dinner"], "context": "Absolutely! We offer romantic beach dinners and in-villa dining. Please let us know your preferred date and time." },
+  { "intent": "activities_info", "keywords": ["activities", "games", "sports", "entertainment", "cycling", "fun"], "context": "Activities include swimming, yoga, cycling, and indoor games. Check the activity board near reception." },
+  { "intent": "kids_zone", "keywords": ["kids", "children", "play", "play area", "4 & 6s", "outdoor play"], "context": "Yes! we offer a spacious outdoor play area, a water theme park, and a bungee trampoline to keep children active and entertained." },
+  { "intent": "extra_pillow", "keywords": ["pillow", "extra pillow", "more pillows"], "context": "Certainly! Please contact housekeeping at '644' and we will promptly deliver extra pillows to your room." },
+  { "intent": "extra_towel", "keywords": ["towel", "extra towel", "more towels"], "context": "Certainly! Please contact housekeeping at '644' and we will promptly deliver extra towels to your room." },
+  { "intent": "extra_bed", "keywords": ["bed", "extra bed", "more beds"], "context": "Certainly! Please contact housekeeping at '644' and we will promptly deliver extra bed to your room." },
+  { "intent": "extra_toiletries", "keywords": ["toothbrush", "soap", "shampoo"], "context": "Certainly! Please contact housekeeping at '644' and we will promptly deliver toiletries to your room." },
+  { "intent": "digital_safe", "keywords": ["safe", "locker", "security box", "digital safe"], "context": "Yes, there is a digital safe located inside the closet. Instructions are on the inside of the door." },
+  { "intent": "smoking_policy", "keywords": ["smoking", "smoke", "smoke in room", "cigarette", "smoking area", "where to smoke"], "context": "All rooms are non-smoking. Please use the designated smoking areas available around the property." },
+  { "intent": "housekeeping_request", "keywords": ["housekeeping", "clean room", "clean my room", "room cleaning", "daily cleaning"], "context": "Housekeeping is done daily. If you need housekeeping at a specific time, please dial '644'." },
+  { "intent": "laundry_info", "keywords": ["laundry", "wash clothes", "dry cleaning", "laundry bag"], "context": "Yes, laundry bags and forms are in the closet. Place them outside your door or call housekeeping '644' to pick it up." },
+  { "intent": "tv_info", "keywords": ["channels", "television", "remote", "streaming"], "context": "Please use the remote to turn on the TV." },
+  { "intent": "room_setup", "keywords": ["honeymoon", "birthday", "surprise", "decorate", "room decoration", "romantic setup"], "context": "Yes! Whether it is a honeymoon, birthday, or surprise, we can assist. Just let us know the occasion." },
+  { "intent": "front_desk", "keywords": ["front desk", "reception", "call help", "concierge", "help desk"], "context": "Dial '0' from your room phone, use this assistant, or message us via WhatsApp if you prefer." },
+  { "intent": "wake_up_call", "keywords": ["wake-up call", "wakeup call", "wake up call", "alarm", "morning call", "wake me"], "context": "Absolutely. Let us know the time you'd like your call." },
+  { "intent": "book_tour", "keywords": ["book tour", "tour", "excursion", "day trip", "nearby trip", "local tour"], "context": "Our concierge team will gladly help you plan trips, book transport, and arrange guides. Just let us know what you'd like to explore!" },
+  { "intent": "checkout_info", "keywords": ["checkout", "late checkout", "check-out", "departure", "stay longer"], "context": "Checkout time is 11:00 AM. Late check-out is subject to availability — please check with reception the evening before your departure." },
+  { "intent": "electrical_issue", "keywords": ["bulb", "light", "fan not working", "tv is not working", "ac is not working", "exhaust fan"], "context": "Sorry for the inconvenience, sir. We will send the technician immediately to fix it promptly" },
+  { "intent": "plumbing_issue", "keywords": ["geyser", "hot water", "flush"], "context": "Sorry for the inconvenience, sir. We will send the Plumber immediately to fix it promptly" },
+  { "intent": "ac_info", "keywords": ["on ac", "increase ac temperature", "off ac", "decrease ac temperature", "ac fan speed", "swing", "timer", "ac sleep mode", "ac remote"], "context": "Please use the remote to turn on the AC." }
+]
