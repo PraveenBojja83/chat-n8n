@@ -1,0 +1,7 @@
+Source for Prompt (User Message)
+Define below
+
+Prompt (User Message)
+Output exactly the following message without adding any extra text, questions, or commentary:
+
+{{ $json.intentContext }}
