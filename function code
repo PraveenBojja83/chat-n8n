@@ -1,0 +1,42 @@
+Mode
+Run Once for All Items
+Language
+JavaScript
+
+let chatInput;
+let intentKeywordsArray;
+
+// Pull chat and keywords just like before
+for (const item of $input.all()) {
+  if (item.json.chatInput) {
+    chatInput = item.json.chatInput;
+  }
+  if (item.json.intent_keywords) {
+    intentKeywordsArray = item.json.intent_keywords;
+  }
+}
+chatInput = chatInput || "";
+intentKeywordsArray = intentKeywordsArray || [];
+
+function detectIntent(message, intentList) {
+  if (!message || !Array.isArray(intentList)) return { intent: "UnknownIntent", context: "unknown" };
+  const lowerMsg = message.toLowerCase();
+  for (const intent of intentList) {
+    for (const keyword of intent.keywords) {
+      if (lowerMsg.includes(keyword.toLowerCase())) {
+        return { intent: intent.intent, context: intent.context || "" };
+      }
+    }
+  }
+  return { intent: "UnknownIntent", context: "unknown" };
+}
+
+const detection = detectIntent(chatInput, intentKeywordsArray);
+
+return {
+  json: {
+    chatInput,
+    intentType: detection.intent,
+    intentContext: detection.context
+  }
+};
